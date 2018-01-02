@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - dotNetMusic</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .overlay {
+            background: Transparent;
+            z-index: 100;
+            position: relative;
+        }
+        .videobox {
+            position: relative;
+            top: 20%;
+            -webkit-transform: translateY(-20%);
+            -moz-transform: translateY(-20%);
+            -ms-transform: translateY(-20%);
+            -o-transform: translateY(-20%);
+            transform: translateY(-20%);
+            position: absolute;
+        }
+        .homepara {
+            margin-bottom: 0.9em;
+            background: transparent;
+            display: block;
+            color: #fff;
+            text-align: center;
+        }
+        h1,h2,h3,h4,h5,h6,div {
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-color: #102C4B;">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("dotNetMusic", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li>@Html.ActionLink("Home", "Index", "Home")</li>-->
+                    <!--<li>@Html.ActionLink("Tracks", "Index", "Tracks")</li>-->
+                    <!--<li>@Html.ActionLink("Playlists", "Index", "Playlists")</li>-->
+                    <!--<li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>-->
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="videobox">
+        <div>
+            <video poster="~/Content/Images/HomeAnimation.jpg" width="100%" playsinline="" autoplay="" muted="" loop="">
+                <source src="~/Content/Images/HomeAnimation_v2.mp4" type="video/webm">
+            </video>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Developed by Kausthob Das</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

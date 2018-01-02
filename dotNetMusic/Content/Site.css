@@ -1,0 +1,76 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.checked {
+    color: orange;
+}
+
+.overlay {
+    background: Transparent;
+    z-index: 100;
+    position: absolute;
+}
+
+h2 {
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0.2em;
+    color: #fff;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-content {
+    width: inherit;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.infobtn {
+    background-color: transparent;
+}
+
+    .infobtn:hover {
+        background-color: transparent;
+    }
+
+.hugebtn {
+    padding: 12px 55px !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+    margin: 20px;
+    border-radius: 50px !important;
+    text-align: center;
+}
+

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=sql1.gtt.me;Database=db_2f1ffc4b4a484904ad59b7ca21216cc6;User Id=U_2f1ffc4b4a484904ad59b7ca21216cc6;Password=pwd_2f1ffc4b4a484904ad59b7ca21216cc6" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kausthob\\Documents\\GitHub\\Music-Listing\\dotNetMusic\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
