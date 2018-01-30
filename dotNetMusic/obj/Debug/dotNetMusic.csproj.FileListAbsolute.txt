@@ -390,3 +390,4 @@ C:\Users\Kausthob\Documents\GitHub\dotNetMusic\dotNetMusic\bin\Microsoft.AI.Web.
 C:\Users\Kausthob\Documents\GitHub\dotNetMusic\dotNetMusic\obj\Debug\dotNetMusic.csproj.CoreCompileInputs.cache
 C:\Users\Kausthob\Documents\GitHub\dotNetMusic\dotNetMusic\obj\Debug\dotNetMusic.dll
 C:\Users\Kausthob\Documents\GitHub\dotNetMusic\dotNetMusic\obj\Debug\dotNetMusic.pdb
+C:\Users\Kausthob\Documents\GitHub\dotNetMusic\dotNetMusic\obj\Debug\dotNetMusic.csprojResolveAssemblyReference.cache
